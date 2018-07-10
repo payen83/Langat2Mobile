@@ -1,0 +1,31 @@
+<ion-content padding class="background vertical-align-content" text-center>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+      </ion-col>
+      <ion-col col-4>
+        <ion-card>
+          <div align="center">
+            <img src="assets/imgs/logo.png">
+          </div>
+          <ion-list no-lines>
+            <ion-item>
+              <ion-input type="text" placeholder="Email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-input type="password" placeholder="Password"></ion-input>
+            </ion-item>
+          </ion-list>
+          <button ion-button round large color="secondary" block (click)="doLogin()">Login</button>
+          <div padding></div>
+          <button ion-button block clear color="light" (click)="forgotPassword()">Forgot password?</button>
+
+        </ion-card>
+      </ion-col>
+      <ion-col col-4>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
