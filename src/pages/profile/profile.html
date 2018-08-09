@@ -7,82 +7,75 @@
     </ion-navbar>
   </ion-header>
   
-  <ion-content>
+ 
+  <ion-content class="bg">
     <div class="wrapper">
       <header class="wrapper-text">
-        <img src="assets/imgs/user.png" class="img" />
-        <h3>Farhan Ramli</h3>
-        <p>user@gmail.com</p>
+
+          <ion-grid>
+             <ion-row>
+               <ion-col col-2><img src="assets/imgs/user.png" class="img" />
+               </ion-col>
+               <ion-col><h3>Farhan Ramli</h3>
+                <p>user@gmail.com</p>
+              </ion-col>
+          </ion-row>
+              </ion-grid>
+        
+
       </header>
     </div>
-    <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <ion-list>
+            <ion-list-header color="list-grey">Basic Information</ion-list-header>
+
+            <ion-item>
+              <ion-label>First Name</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Last Name</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Email</ion-label>
+                <ion-input type="email"></ion-input>
+              </ion-item>
+        
+          </ion-list>
+        </ion-col>
+
+        <ion-col col-6>
+          <ion-list>
+            <ion-list-header color="list-grey">Account Information</ion-list-header>
+            <ion-item>
+              <ion-label>Username</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+
+          </ion-list>
+
+        </ion-col>
+
+      </ion-row>
+      <ion-row>
+        <ion-col offset-9 col-3>
+            <button full ion-button color="primary" >Save</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+   
+    
+    </ion-content>
   
-      <ion-item-divider color="light">
-        <strong>Personal Details</strong>
-      </ion-item-divider>
-  
-      <ion-item>
-        <ion-label fixed>Name</ion-label>
-        <div class="item-content" item-content>
-          <ion-input type="text" [(ngModel)]="user.name"></ion-input>
-        </div>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label fixed>IC No.</ion-label>
-        <div item-content class="item-content">
-          <ion-input type="text" [(ngModel)]="user.icNo"></ion-input>
-        </div>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label fixed>Phone No.</ion-label>
-        <div item-content class="item-content">
-          <ion-input type="text" [(ngModel)]="user.phoneNo"></ion-input>
-        </div>
-      </ion-item>
-  
-      <ion-item text-wrap>
-        <ion-label fixed>Address</ion-label>
-        <div item-content class="item-content">
-          <ion-textarea rows="4" type="text" [(ngModel)]="user.address"></ion-textarea>
-        </div>
-      </ion-item>
-      
-      <ion-item-divider color="light">
-        <strong>Bank Details</strong>
-      </ion-item-divider>
-      <ion-item>
-        <ion-label fixed>Bank Name</ion-label>
-        <div item-content class="item-content">
-          <ion-input type="text" [(ngModel)]="user.bankName"></ion-input>
-        </div>
-      </ion-item>
-      <ion-item fixed>
-        <ion-label>Account No.</ion-label>
-        <div item-content class="item-content">
-          <ion-input type="text" [(ngModel)]="user.bankAcc"></ion-input>
-        </div>
-      </ion-item>
-  
-      <ion-item-divider color="light">
-        <strong>Account Details</strong>
-      </ion-item-divider>
-      <ion-item>
-        <ion-label>Email</ion-label>
-        <div item-content class="item-content">user@gmail.com</div>
-      </ion-item>
-      <ion-item tappable (click)="changePassword()">
-        <ion-label>Password</ion-label>
-        <div item-content class="item-content">
-          <em>Tap to change</em>
-        </div>
-      </ion-item>
-    </ion-list>
-  
-  </ion-content>
-  <ion-footer>
-    <ion-toolbar color="secondary">
-      <button small color="light" ion-button clear block>Save</button>
-    </ion-toolbar>
-  </ion-footer>
+     

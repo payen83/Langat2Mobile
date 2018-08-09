@@ -14,4 +14,12 @@ page-profile {
     .item-content{
         color: #505050;
     }
+    .bg{
+        background-color: color($colors, light);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    ion-list-header {
+        background-color: color($colors, list-grey);
+    }
 }
