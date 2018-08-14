@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { UserProvider } from '../../providers/user/user';
-import { HomePage } from '../home/home';
+import { MainPage } from '../main/main';
 
 
 /**
@@ -27,7 +27,7 @@ export class LoginPage {
 
   doLogin(){
     this.user.login('username');
-    this.navCtrl.setRoot(HomePage, {}, {animate: true});
+    this.navCtrl.setRoot(MainPage, {}, {animate: true});
   }
 
   forgotPassword(){

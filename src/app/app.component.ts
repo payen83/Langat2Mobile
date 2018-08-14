@@ -3,9 +3,13 @@ import { Nav, Platform, Events } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { MainPage } from '../pages/main/main';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/List/List';
 import { UserProvider } from '../providers/user/user';
+
+
+
 
 @Component({
   templateUrl: 'app.html'
@@ -22,9 +26,11 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      {title: 'Main', component: MainPage, icon: 'folder'},
       { title: 'Home', component: HomePage, icon: 'home' },
       { title: 'List', component: ListPage, icon: 'list' },
       { title: 'Profile', component: 'ProfilePage', icon: 'person' }
+     
     ];
     this.listenToLoginEvents();
 

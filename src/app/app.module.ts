@@ -13,12 +13,14 @@ import { ApiProvider } from '../providers/api/api';
 import { LoginPageModule } from '../pages/login/login.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfilePageModule } from '../pages/profile/profile.module';
+import { MainPage } from '../pages/main/main';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    MainPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { ProfilePageModule } from '../pages/profile/profile.module';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    MainPage
   ],
   providers: [
     StatusBar,

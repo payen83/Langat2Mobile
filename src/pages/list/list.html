@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Asset Registration</ion-title>
+    <ion-title>Add Asset</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -13,12 +13,15 @@
       <ion-segment-button value="general-info">
         General Info
       </ion-segment-button>
-      <ion-segment-button value="asset-maintain">
-        Maintainance Info
-      </ion-segment-button>
+
       <ion-segment-button value="technical-spect">
         Thecnical Specification
       </ion-segment-button>
+
+      <ion-segment-button value="asset-maintain">
+        verification & Validation
+      </ion-segment-button>
+
       <ion-segment-button value="media">
         picture
       </ion-segment-button>
@@ -32,84 +35,54 @@
           <ion-col col-12>
             <ion-list>
 
-              <ion-list-header color="list-grey">General Asset Information</ion-list-header>
+              <ion-list-header color="list-grey">Asset Owning</ion-list-header>
               
             </ion-list>
           </ion-col>
 
           <ion-col col-6>
               <ion-item>
-                  <ion-label color="dark">Asset ID </ion-label>
+                  <ion-label color="dark">Owning Organization</ion-label>
                   <ion-input type="text"></ion-input>
                 </ion-item>
   
                 <ion-item>
-                  <ion-label color="dark">RFID ID </ion-label>
+                  <ion-label color="dark">Asset Owning Department</ion-label>
                   <ion-input type="text"></ion-input>
                 </ion-item>
   
                 <ion-item>
-                  <ion-label color="dark">Asset Identity </ion-label>
+                  <ion-label color="dark">Main Operation</ion-label>
                   <ion-input type="text"></ion-input>
                 </ion-item>
-  
-                <ion-item>
-                  <ion-label color="dark">Brand </ion-label>
-                  <ion-input type="text"></ion-input>
-                </ion-item>
-  
-                <ion-item>
-                  <ion-label color="dark">Model Number </ion-label>
-                  <ion-input type="number"></ion-input>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label color="dark">Size 1</ion-label>
-                  <ion-input type="number"></ion-input>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label color="dark">Size 2</ion-label>
-                  <ion-input type="number"></ion-input>
-                </ion-item>
-
-                <ion-item>
-                    <ion-label color="dark">Size 3</ion-label>
-                    <ion-input type="number"></ion-input>
-                  </ion-item>
           </ion-col>
 
           <ion-col col-6>
               <ion-item>
-                  <ion-label color="dark">Asset ID </ion-label>
+                  <ion-label color="dark">Operation</ion-label>
                   <ion-input type="text"></ion-input>
                 </ion-item>
   
                 <ion-item>
-                  <ion-label color="dark">Plate number(Parent Asset)</ion-label>
+                  <ion-label color="dark">Region</ion-label>
                   <ion-input type="text"></ion-input>
                 </ion-item>
   
                 <ion-item>
-                  <ion-label color="dark">Plate number(Asset)</ion-label>
+                  <ion-label color="dark">WTP Facility</ion-label>
                   <ion-input type="text"></ion-input>
-                </ion-item>
-  
-                <ion-item>
-                  <ion-label color="dark">Detail Description</ion-label>
-                  <ion-input type="text"></ion-input>
-                </ion-item>
-  
-                <ion-item>
-                  <ion-label color="dark">Conected From</ion-label>
-                  <ion-input type="number"></ion-input>
-                </ion-item>
-
-                <ion-item>
-                  <ion-label color="dark">Connected to</ion-label>
-                  <ion-input type="number"></ion-input>
                 </ion-item>
           </ion-col>
+
+          <ion-col col-12>
+            <ion-list>
+
+              <ion-list-header color="#fff">WTP Other Fields</ion-list-header>
+              
+            </ion-list>
+          </ion-col>
+
+
         </ion-row>
       </ion-grid>
     </div>
@@ -210,7 +183,10 @@
 
                 <ion-item>
                   <ion-label color="dark">Spares (Y/N)</ion-label>
-                  <ion-input type="number"></ion-input>
+                  <ion-select [(ngModel)]="gaming">
+                    <ion-option value="nes">Yes</ion-option>
+                    <ion-option value="n64">No</ion-option>
+                  </ion-select>
                 </ion-item>
 
                 <ion-item>
