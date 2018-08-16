@@ -1,30 +1,25 @@
-import { Component, ViewChild} from '@angular/core';
-import { NavController } from 'ionic-angular';
-import{ Chart } from 'chart.js';
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+/**
+ * Generated class for the HomePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
 })
 export class HomePage {
-  @ViewChild('pieCanvas') pieCanvas;
-  pieChart: any;
-  
-constructor (){}
-  IonViewDidLoad(){
-   
-      this.pieChart = new Chart(this.pieCanvas.nativeElement,{
-        type: 'pie',
-        data: {
-          labels: ['kerosakkan','Bencana','Ganguan'],
-          datasets: [{
-            backgroundcolor: ['blue','red','white'],
-            data:[4,5,6],
-            hoverBackgroundcolor: ['blue','red','white']
-          }]
-        }
-      });
-    }
-    
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad HomePage');
+  }
+
+}

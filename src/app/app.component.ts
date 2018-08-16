@@ -3,9 +3,9 @@ import { Nav, Platform, Events } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { MainPage } from '../pages/main/main';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/List/List';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { RegisterPage } from '../pages/Register/Register';
 import { UserProvider } from '../providers/user/user';
 
 
@@ -26,9 +26,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      {title: 'Main', component: MainPage, icon: 'folder'},
-      { title: 'Home', component: HomePage, icon: 'home' },
-      { title: 'List', component: ListPage, icon: 'list' },
+      {title: 'Home', component: HomePage, icon: 'home'},
+      { title: 'Dashboard', component: DashboardPage, icon: 'aperture' },
+      { title: 'Register', component: RegisterPage, icon: 'list' },
       { title: 'Profile', component: 'ProfilePage', icon: 'person' }
      
     ];
