@@ -4,7 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { DashboardPage } from '../pages/dashboard/dashboard';
-import { RegisterPage } from '../pages/Register/Register';
+import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,6 +14,7 @@ import { LoginPageModule } from '../pages/login/login.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfilePageModule } from '../pages/profile/profile.module';
 import { HomePage } from '../pages/home/home';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HomePage } from '../pages/home/home';
     ProfilePageModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
+    ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

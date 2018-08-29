@@ -1,31 +1,64 @@
 <ion-content padding class="background vertical-align-content" text-center>
   <ion-grid>
     <ion-row>
-      <ion-col col-4>
+      <ion-col col-3>
       </ion-col>
-      <ion-col col-4>
+      <ion-col col-6>
         <ion-card>
-          <div align="center">
-            <img src="assets/imgs/logo.png">
+          <div class="nav" align="center">
+            <img src="assets/imgs/amis.png">
           </div>
           <ion-list no-lines>
-            <ion-item>
+            <ion-item >
               <ion-input type="text" placeholder="Email"></ion-input>
             </ion-item>
 
             <ion-item>
-              <ion-input type="password" placeholder="Password"></ion-input>
+              <ion-input type="password" placeholder="Password" color="dark"></ion-input>
             </ion-item>
           </ion-list>
-          <button ion-button round large color="secondary" block (click)="doLogin()">Login</button>
-          <div padding></div>
-          <button ion-button block clear color="light" (click)="forgotPassword()">Forgot password?</button>
+          <ion-item>
+            <ion-label color="dark">Remember me</ion-label>
+            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+            <ion-label class="pass" color="dark">Forgot Password?</ion-label>
+          </ion-item>
+         
+          <div padding> 
+            <button class="btnwidth" ion-button round large color="primary" block (click)="doLogin()">Login</button>
+          </div>
 
-        </ion-card>
-      </ion-col>
-      <ion-col col-4>
+          <ion-grid>
+            <ion-row>
 
-      </ion-col>
+                <ion-col col-4>
+                    <div class="ing" align="center">
+                        <img src="assets/imgs/Air.png">
+                      </div>
+                </ion-col>
+      
+                <ion-col col-4>
+                    <div class="ipg" align="center">
+                        <img src="assets/imgs/Idaman.png">
+                      </div>
+                </ion-col>
+
+                <ion-col col-4>
+                    <div class="ilg" align="center">
+                        <img src="assets/imgs/paab.png">
+                      </div>
+                </ion-col>
+
+
+            </ion-row>
+          </ion-grid>
+
+          
+          
+          
+
+          
+    </ion-card>
+  </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>

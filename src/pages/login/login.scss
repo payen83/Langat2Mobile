@@ -3,13 +3,18 @@ page-login {
     .card-md {
       margin-top: -5em;
       //width: calc(100% - 24px);
-      max-width: calc(100%);
-      font-size: 1.4rem;
-      background: transparent;
-      -webkit-box-shadow: none;
+      height: 650px;
+      width: 600px;
+      background-color: white;
+      text-align: center;
+      margin: 20px;
+      box-shadow: none;
+      border-radius: 20px;
+    
+    
     }
     .background {
-      background-image: linear-gradient(45deg, #0d55f0, #04bef7);
+      background-image: url("../assets/imgs/Filter-Building.jpg");
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -22,21 +27,63 @@ page-login {
     .item-md {
       background-color: transparent !important;
       color: white;
+      margin: 1vh;
+      
+
     }
     .text-input::-moz-placeholder {
       color: white;
     }
     .text-input:-ms-input-placeholder {
-      color: white;
+      color: black;
+      
     }
     .text-input::-webkit-input-placeholder {
       text-indent: 0;
-      color: white;
+      color: black;
+      
     }
-    img{
-      width: 200px;
-      height: 200px;
+    .nav{
+      width: 400px;
+      height: auto;
+      margin: 7vh;
+      margin-left: 7vh;
     }
-  }
+
+    .btnwidth{
+      width: 75%;
+      margin-left: 8vh;
+      
+
+      
+      
+    }
+
+    .ing{
+      width: 75%;
+      margin-bottom: 4vh;
+      margin-left: 4vh;
+    }
+
+    .ipg{
+      width: 50%;
+      margin-bottom: 4vh;
+      margin-left: 4vh;
+    }
+
+    .ilg{
+      width: 75%;
+      margin-bottom: 3vh;
+      // margin-left: 3vh;
+
+    }
+
+    .pass{
+      text-align: right;
+    }
+
+
+  
+    }
   
   
