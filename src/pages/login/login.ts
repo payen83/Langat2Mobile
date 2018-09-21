@@ -4,6 +4,7 @@ import { UserProvider } from '../../providers/user/user';
 import { HomePage } from '../home/home';
 
 
+
 /**
  * Generated class for the LoginPage page.
  *

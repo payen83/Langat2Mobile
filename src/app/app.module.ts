@@ -3,8 +3,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,12 +13,17 @@ import { ApiProvider } from '../providers/api/api';
 import { LoginPageModule } from '../pages/login/login.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfilePageModule } from '../pages/profile/profile.module';
+import { ChartsModule } from 'ng2-charts';
+import { IonicStorageModule } from '@ionic/storage';
+import { AssetPageModule } from '../pages/asset/asset.module';
+import { PendingPageModule } from '../pages/pending/pending.module';
+import { HomePageModule } from '../pages/home/home.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage
+    DashboardPage,
+    RegisterPage,
   ],
   imports: [
     BrowserModule,
@@ -26,12 +31,17 @@ import { ProfilePageModule } from '../pages/profile/profile.module';
     ProfilePageModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
+    ChartsModule,
+    IonicStorageModule.forRoot(),
+    AssetPageModule,
+    PendingPageModule,
+    HomePageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage
+    DashboardPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,
@@ -39,6 +49,7 @@ import { ProfilePageModule } from '../pages/profile/profile.module';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
     ApiProvider
+    
   ]
 })
 export class AppModule {}

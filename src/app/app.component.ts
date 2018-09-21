@@ -4,8 +4,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { RegisterPage } from '../pages/register/register';
 import { UserProvider } from '../providers/user/user';
+import { PendingPage } from '../pages/pending/pending';
+import { AssetPage } from '../pages/asset/asset';
+
+
+
 
 @Component({
   templateUrl: 'app.html'
@@ -22,9 +28,13 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage, icon: 'home' },
-      { title: 'List', component: ListPage, icon: 'list' },
-      { title: 'Profile', component: 'ProfilePage', icon: 'person' }
+      {title: 'Home', component: HomePage, icon: 'home'},
+      { title: 'Dashboard', component: DashboardPage, icon: 'aperture' },
+      { title: 'Register', component: RegisterPage, icon: 'list' },
+      { title: 'Profile', component: 'ProfilePage', icon: 'person' },
+      {title: 'Pending Sync', component: PendingPage, icon: 'refresh'},
+      { title: 'Asset Disapproaval', component: AssetPage, icon: 'done-all'}
+     
     ];
     this.listenToLoginEvents();
 

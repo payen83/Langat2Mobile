@@ -1,15 +1,23 @@
 page-login {
     .card-ios,
     .card-md {
+      position: relative;
       margin-top: -5em;
       //width: calc(100% - 24px);
-      max-width: calc(100%);
-      font-size: 1.4rem;
-      background: transparent;
-      -webkit-box-shadow: none;
+      height: 500px;
+      width: 420px;
+      background-color: white;
+      text-align: center;
+      margin: 20px;
+      box-shadow: none;
+      border-radius: 10px;
+      left: 80px;
+    
+    
     }
     .background {
-      background-image: linear-gradient(45deg, #0d55f0, #04bef7);
+      position: absolute;
+      background-image: url("../assets/imgs/login.png");
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -20,23 +28,67 @@ page-login {
     }
     .item-ios,
     .item-md {
+      position: relative;
       background-color: transparent !important;
       color: white;
+      margin: 1vh;
+      
+
     }
     .text-input::-moz-placeholder {
       color: white;
     }
     .text-input:-ms-input-placeholder {
-      color: white;
+      color: black;
+      
     }
     .text-input::-webkit-input-placeholder {
       text-indent: 0;
-      color: white;
+      color: black;
+      
     }
-    img{
-      width: 200px;
-      height: 200px;
+    .nav{
+      width: 320px;
+      height: auto;
+      margin: 4vh;
+      margin-left: 5vh;
     }
-  }
+
+    .btnwidth{
+      width: 100%;
+      margin-left: 0vh;
+
+    }
+
+    .ing{
+      position: relative;
+      width: 80%;
+      top: -25px;
+      left: 0px;
+    }
+
+    .ipg{
+      position: relative;
+      width: 150%;
+      top: 7px;
+      right: 20px;
+    }
+
+    .ilg{
+      position: relative;
+      width: 55%;
+      top: 5px;
+      left: 50px;
+
+    }
+
+    // .pass{
+    //   text-align: 20px;
+    //   left: 10%;
+    // }
+
+
+  
+    }
   
   
