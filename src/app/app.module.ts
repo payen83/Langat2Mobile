@@ -18,6 +18,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { AssetPageModule } from '../pages/asset/asset.module';
 import { PendingPageModule } from '../pages/pending/pending.module';
 import { HomePageModule } from '../pages/home/home.module';
+import {NgxDatatableModule} from '@swimlane/ngx-datatable';
 
 
 
@@ -40,6 +41,7 @@ import { HomePageModule } from '../pages/home/home.module';
     AssetPageModule,
     PendingPageModule,
     HomePageModule,
+    NgxDatatableModule
 
   ],
   bootstrap: [IonicApp],
@@ -47,6 +49,7 @@ import { HomePageModule } from '../pages/home/home.module';
     MyApp,
     DashboardPage,
     RegisterPage
+
   ],
   providers: [
     StatusBar,
