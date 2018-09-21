@@ -1,20 +1,23 @@
 page-login {
     .card-ios,
     .card-md {
+      position: relative;
       margin-top: -5em;
       //width: calc(100% - 24px);
-      height: 650px;
-      width: 600px;
+      height: 500px;
+      width: 420px;
       background-color: white;
       text-align: center;
       margin: 20px;
       box-shadow: none;
-      border-radius: 20px;
+      border-radius: 10px;
+      left: 80px;
     
     
     }
     .background {
-      background-image: url("../assets/imgs/Filter-Building.jpg");
+      position: absolute;
+      background-image: url("../assets/imgs/login.png");
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -25,6 +28,7 @@ page-login {
     }
     .item-ios,
     .item-md {
+      position: relative;
       background-color: transparent !important;
       color: white;
       margin: 1vh;
@@ -44,43 +48,44 @@ page-login {
       
     }
     .nav{
-      width: 400px;
+      width: 320px;
       height: auto;
-      margin: 7vh;
-      margin-left: 7vh;
+      margin: 4vh;
+      margin-left: 5vh;
     }
 
     .btnwidth{
-      width: 75%;
-      margin-left: 8vh;
-      
+      width: 100%;
+      margin-left: 0vh;
 
-      
-      
     }
 
     .ing{
-      width: 75%;
-      margin-bottom: 4vh;
-      margin-left: 4vh;
+      position: relative;
+      width: 80%;
+      top: -25px;
+      left: 0px;
     }
 
     .ipg{
-      width: 50%;
-      margin-bottom: 4vh;
-      margin-left: 4vh;
+      position: relative;
+      width: 150%;
+      top: 7px;
+      right: 20px;
     }
 
     .ilg{
-      width: 75%;
-      margin-bottom: 3vh;
-      // margin-left: 3vh;
+      position: relative;
+      width: 55%;
+      top: 5px;
+      left: 50px;
 
     }
 
-    .pass{
-      text-align: right;
-    }
+    // .pass{
+    //   text-align: 20px;
+    //   left: 10%;
+    // }
 
 
   

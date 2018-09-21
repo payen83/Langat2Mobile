@@ -13,15 +13,21 @@ import { ApiProvider } from '../providers/api/api';
 import { LoginPageModule } from '../pages/login/login.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfilePageModule } from '../pages/profile/profile.module';
-import { HomePage } from '../pages/home/home';
 import { ChartsModule } from 'ng2-charts';
+import { IonicStorageModule } from '@ionic/storage';
+import { AssetPageModule } from '../pages/asset/asset.module';
+import { PendingPageModule } from '../pages/pending/pending.module';
+import { HomePageModule } from '../pages/home/home.module';
+
+
+
 
 @NgModule({
   declarations: [
     MyApp,
     DashboardPage,
     RegisterPage,
-    HomePage
+   
   ],
   imports: [
     BrowserModule,
@@ -29,14 +35,18 @@ import { ChartsModule } from 'ng2-charts';
     ProfilePageModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
-    ChartsModule
+    ChartsModule,
+    IonicStorageModule.forRoot(),
+    AssetPageModule,
+    PendingPageModule,
+    HomePageModule,
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     DashboardPage,
-    RegisterPage,
-    HomePage
+    RegisterPage
   ],
   providers: [
     StatusBar,
@@ -44,6 +54,7 @@ import { ChartsModule } from 'ng2-charts';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
     ApiProvider
+    
   ]
 })
 export class AppModule {}

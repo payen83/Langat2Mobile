@@ -7,6 +7,8 @@ import { HomePage } from '../pages/home/home';
 import { DashboardPage } from '../pages/dashboard/dashboard';
 import { RegisterPage } from '../pages/register/register';
 import { UserProvider } from '../providers/user/user';
+import { PendingPage } from '../pages/pending/pending';
+import { AssetPage } from '../pages/asset/asset';
 
 
 
@@ -29,7 +31,9 @@ export class MyApp {
       {title: 'Home', component: HomePage, icon: 'home'},
       { title: 'Dashboard', component: DashboardPage, icon: 'aperture' },
       { title: 'Register', component: RegisterPage, icon: 'list' },
-      { title: 'Profile', component: 'ProfilePage', icon: 'person' }
+      { title: 'Profile', component: 'ProfilePage', icon: 'person' },
+      {title: 'Pending Sync', component: PendingPage, icon: 'refresh'},
+      { title: 'Asset Disapproaval', component: AssetPage, icon: 'done-all'}
      
     ];
     this.listenToLoginEvents();
