@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Config } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
-import { HttpClient } from '@angular/common/http';
+
 
 /**
  * Generated class for the PendingPage page.
@@ -16,6 +16,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: 'pending.html',
 })
 export class PendingPage {
+  assetgroup: {id: string, primary: string, sub1: string, rfid: string, aisid: string, sub2: string};
   assetlocList: Array<any>
   assetgroupList: Array<any>
   tablestyle = 'bootstrap';
@@ -24,19 +25,19 @@ export class PendingPage {
   public rows : any;
   users: any;
 
-  constructor( private _HTTP: HttpClient, public storage:Storage, public navCtrl: NavController, public navParams: NavParams) {
+  constructor( public storage:Storage, public navCtrl: NavController, public navParams: NavParams) {
     this.assetlocList = [];
     this.assetgroupList = [];
     this.columns= [
-      { prop:'Asset ID' },
-      { name:'Asset Primary Category' },
-      { name:'Sub Category 1' },
-      { name:'Sub Category 2' }
+      { prop:'id', name: 'Asset ID' },
+      { prop:'primary', name:'Asset Primary Category' },
+      { prop:'sub1', name:'Sub Category 1' },
+      { prop:'sub2', name:'Sub Category 2' }
     ];
   }
 
   ionViewDidLoad() {
-    this.storage.get('ASSETLOC_LIST').then((val) =>{
+        this.storage.get('ASSETLOC_LIST').then((val) =>{
 
       if(val) {
         this.assetlocList = JSON.parse(val);

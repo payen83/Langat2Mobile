@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ModalController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 
 @Component({
@@ -19,7 +19,7 @@ export class RegisterPage {
   assetgroupList: Array<any>;
   assetlocList: Array<any>;
 
-  constructor( public storage: Storage, public navCtrl: NavController, public navParams: NavParams) {
+  constructor( public modal: ModalController, public storage: Storage, public navCtrl: NavController, public navParams: NavParams) {
     this.info = 'general-info';
     this.assetgroup = {
       id:null,
@@ -100,8 +100,15 @@ export class RegisterPage {
     this.navCtrl.push('PendingPage');
   }
 
+  openModal() {
+    const myModal = this.modal.create('CameraPage')
+
+    myModal.present();
+  }
+
   ionViewDidLoad(){
     this.asset="general-info";
+
 
   }
 
