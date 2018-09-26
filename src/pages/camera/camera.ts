@@ -17,6 +17,9 @@ export class CameraPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+  closeModal() {
+    this.navCtrl.pop();
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CameraPage');
