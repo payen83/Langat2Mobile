@@ -19,6 +19,7 @@ import { AssetPageModule } from '../pages/asset/asset.module';
 import { PendingPageModule } from '../pages/pending/pending.module';
 import { HomePageModule } from '../pages/home/home.module';
 import {NgxDatatableModule} from '@swimlane/ngx-datatable';
+import { Camera } from '@ionic-native/camera';
 
 
 
@@ -53,7 +54,7 @@ import {NgxDatatableModule} from '@swimlane/ngx-datatable';
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+    SplashScreen, Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider,
     ApiProvider

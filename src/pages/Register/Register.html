@@ -9,11 +9,11 @@
           </ion-col>
 
           <ion-col col-2>
-            <button ion-button>Edit Asset</button>
+            <button  ion-button color="orange" outline>Edit Asset</button>
           </ion-col>
 
           <ion-col col-2>
-              <button ion-button (click)="saveAsset()">Save Asset</button>
+              <button class="button-color" ion-button (click)="saveAsset()" >Save Asset</button>
             </ion-col>
 
         </ion-row>
@@ -23,7 +23,7 @@
         
 
     <ion-segment color="light" [(ngModel)]="asset">
-      <ion-segment-button value="general-info">
+      <ion-segment-button outline  value="general-info">
         General Info
       </ion-segment-button>
 
@@ -818,7 +818,7 @@
         <ion-grid>
           <ion-row>
             <ion-col col-2 offset-10>
-              <button ion-button (click)="openModal()" >Add Image</button>
+              <button class="btn" ion-button (click)="openModal()" >Add Image</button>
             </ion-col>
 
             <ion-col col-3>
