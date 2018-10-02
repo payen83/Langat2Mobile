@@ -1,7 +1,6 @@
 .wrapper {
   display: grid; // Define a 10 pixel gap between each grid track
   grid-gap: 5px; // Define a rule, that will be repeated for each grid column, where
-  
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); // Specify the height of the row - minimum value of 50 pixels and a maximum
   grid-auto-rows: minmax(50px, auto);
 }
@@ -14,11 +13,16 @@
   background-color: color($colors, light);
 }
 
+.bg-sidebar {
+  background-image: url('../assets/imgs/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .h1 {
-    font-family: 'Roboto';
-    font-weight: bold
-  }
+  font-family: 'Roboto';
+  font-weight: bold
+}
 
 header,
 footer {
@@ -38,13 +42,18 @@ footer {
 }
 
 .sidemenu-header {
-    padding: 0.3vh !important;
-    padding-left: 1.5vh !important;
+  padding: 0.3vh !important;
+  padding-left: 1.5vh !important;
 }
 
 .button-menu {
-  font-size: 1.3em;
+  font-size: 2em;
   font-weight: lighter;
+  color: azure;
+}
+
+.item-md, .item-ios {
+  line-height: 1.5em;
 }
 
 .p {
@@ -54,6 +63,7 @@ footer {
 .wrapper>* {
   margin-bottom: 10px;
 } 
+
 @supports (display: grid) {
   .wrapper>* {
     margin: 0;
