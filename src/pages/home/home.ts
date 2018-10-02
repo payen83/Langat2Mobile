@@ -22,7 +22,6 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-<<<<<<< HEAD
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
@@ -46,11 +45,6 @@ export class HomePage {
 
   goToAsset(){
     this.navCtrl.setRoot(AssetPage, {}, {animate: true});
-=======
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
->>>>>>> master
   }
 
 }
