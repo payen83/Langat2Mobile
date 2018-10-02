@@ -1,13 +1,3 @@
-<ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>Profile</ion-title>
-    </ion-navbar>
-  </ion-header>
-  
- 
   <ion-content class="bg">
     <div class="wrapper">
       <header class="wrapper-text">
@@ -19,6 +9,17 @@
                <ion-col><h3>Farhan Ramli</h3>
                 <p>user@gmail.com</p>
               </ion-col>
+
+              <ion-col col-2>
+                <button ion-button icon-end color="orange">Upload Image <ion-icon name="camera"></ion-icon>
+                </button>
+              </ion-col>
+            
+              
+              <ion-col col-2>
+                <button ion-button icon-end color="orange">Update Profile  <ion-icon  ios="ios-create" md="md-create" ></ion-icon>
+                </button>
+              </ion-col>
           </ion-row>
               </ion-grid>
         
@@ -27,44 +28,75 @@
     </div>
     <ion-grid>
       <ion-row>
-        <ion-col col-6>
+        <ion-col col-12>
           <ion-list>
-            <ion-list-header color="list-grey">Basic Information</ion-list-header>
-
-            <ion-item>
-              <ion-label>First Name</ion-label>
-              <ion-input type="text"></ion-input>
-            </ion-item>
-        
-            <ion-item>
-              <ion-label>Last Name</ion-label>
-              <ion-input type="text"></ion-input>
-            </ion-item>
-
-            <ion-item>
-                <ion-label>Email</ion-label>
-                <ion-input type="email"></ion-input>
+            <ion-list-header color="big-blue">Profile Details</ion-list-header>
+            </ion-list>
+            </ion-col>
+            <ion-col col-6>
+              <ion-item>
+                <ion-label stacked color="dark">Username</ion-label>
+                <ion-input type="text"></ion-input>
               </ion-item>
-        
-          </ion-list>
-        </ion-col>
+  
+              <ion-item>
+                <ion-label stacked color="dark">First Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
 
-        <ion-col col-6>
+              <ion-item>
+                <ion-label stacked color="dark">Organization Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label stacked color="dark">Office Telephone No.</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </ion-col>
+
+            <ion-col col-6>
+              <ion-item>
+                <ion-label stacked color="dark">Designation</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+  
+              <ion-item>
+                <ion-label stacked color="dark">Last Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label stacked color="dark">Organization's Department/Division/Unit Name</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label stacked color="dark">Email Address</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+            </ion-col>
+  
+
+        <ion-col col-12>
           <ion-list>
-            <ion-list-header color="list-grey">Account Information</ion-list-header>
+            <ion-list-header color="big-blue">Change Password</ion-list-header>
+            </ion-list>
+            </ion-col>
+
+          <ion-col col-6>
             <ion-item>
-              <ion-label>Username</ion-label>
-              <ion-input type="text"></ion-input>
-            </ion-item>
-        
-            <ion-item>
-              <ion-label>Password</ion-label>
+              <ion-label >New Password</ion-label>
               <ion-input type="password"></ion-input>
             </ion-item>
+          </ion-col>
 
-          </ion-list>
-
-        </ion-col>
+          <ion-col col-6>
+            <ion-item>
+              <ion-label>Confirm Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+          </ion-col>
 
       </ion-row>
       <ion-row>

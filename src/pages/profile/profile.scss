@@ -9,6 +9,7 @@ page-profile {
     h3 {
         font-size: 1.5em;
         margin-bottom: -10px !important;
+        color: black;
     }
 
     .item-content{
@@ -22,4 +23,10 @@ page-profile {
     ion-list-header {
         background-color: color($colors, list-grey);
     }
+
+    p {
+        color: #808080;
+    }
+
+    
 }
