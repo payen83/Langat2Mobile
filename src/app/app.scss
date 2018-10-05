@@ -52,9 +52,14 @@ footer {
 }
 
 .button-menu {
-  font-size: 2em;
+  font-size: 1.0em;
   font-weight: lighter;
   color: white;
+}
+
+.label-md, .label-ios {
+  margin-top: 0.5em;
+  padding-top: 0.2em;
 }
 
 .p {
